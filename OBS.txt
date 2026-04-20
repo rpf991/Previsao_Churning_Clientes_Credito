@@ -1,2 +1,0 @@
-* Reavaliar o predict_proba do LogisticRegression
-  e o F1-Score
