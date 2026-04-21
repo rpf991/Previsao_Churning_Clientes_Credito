@@ -11,4 +11,4 @@ def gini_coeficient(model, X_test, Y_Test):
     area_under_reciver = roc_auc_score(Y_Test, probs)
     print(f"Area Under Reciver: {area_under_reciver}")
 
-    return 2 * area_under_reciver - 1
+    return (2 * area_under_reciver) - 1
