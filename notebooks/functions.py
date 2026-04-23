@@ -6,6 +6,7 @@ def gini_coeficient(model, X_test, Y_Test):
     """
 
     # Obtenção de Probabilidades (importante para o Gini)
+    # retorna a chance do cliente ser 1 (Attrited Customer)
     probs = model.predict_proba(X_test)[:, 1]
 
     area_under_reciver = roc_auc_score(Y_Test, probs)
